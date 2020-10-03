@@ -17,10 +17,12 @@ const Navbar = ({ title, icon }) => {
       <li className='nav-item mr-5'>
         <strong className='nav-link'>Hello {user && user.name}</strong>
       </li>
-      <li className='nav-item mr-5'>
-        <a href='#!' className='nav-link' onClick={onLogout}>
-          Logout
-        </a>
+      <li className='nav-item'>
+        <div className='nav-link'>
+          <button className='btn btn-warning btn-sm' onClick={onLogout}>
+          <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
       </li>
     </>
   );
